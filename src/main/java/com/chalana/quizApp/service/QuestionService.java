@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class QuestionService {
@@ -26,5 +27,9 @@ public class QuestionService {
     public String addQuestion(Question question) {
         questionDao.save(question);
         return "Succeess";
+    }
+
+    public void deleteQuestion(Integer id) {
+        questionDao.deleteById(id);
     }
 }

@@ -1,6 +1,6 @@
 package com.chalana.quizApp.controller;
 
-import com.chalana.quizApp.Question;
+import com.chalana.quizApp.model.Question;
 import com.chalana.quizApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
